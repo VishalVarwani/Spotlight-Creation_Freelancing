@@ -1,73 +1,42 @@
 import React from 'react'
-
-export default function Demoo() {
+import "../css/demo.css"
+import {faMagnifyingGlass,faRing,faPhotoFilm, faCakeCandles} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+export default function Demo() {
   return (
     <div>
-  <section id="banner">
-  <div className="banner-iteam banner main-overlay" style={{background: 'url("https://png.pngtree.com/png-clipart/20190903/original/pngtree-cute-cartoon-light-bulb-png-image_4426418.jpg") no-repeat center/cover'}}>
-    <div className="clouds">
-      <img src="images/Smoke_effect/cloud1.png"alt="cloud1" />
-      <img src="images/Smoke_effect/cloud2.png"  alt="cloud2" />
-      <img src="images/Smoke_effect/cloud3.png"  alt="cloud3" />
-      <img src="images/Smoke_effect/cloud4.png"  alt="cloud4" />
-      <img src="images/Smoke_effect/cloud4.png"  alt="cloud5" />
-    </div>
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 ms-auto text-end col-md-12 col-xxl-12  col-xl-12">
-          <div className="banner-text slide-content">
-            <h2>Agency Owner</h2>
-            <h1>Michael Max</h1>
-            <p>"We are professional photography agency."</p>
-            <a className="a ms-auto" href="pricing.html">Buy Now</a>
-          </div>
-        </div>
+      <section className="well well__ins1 center">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-4">
+        <FontAwesomeIcon className="flaticon-toilets1" icon={faCakeCandles} size='2xl' color='black' />
+
+        <hr />
+        <h3>WE ARE CREATIVE</h3>
+        <p>Lorem ipsum dolor sit amet conse ctetur <br /> adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore
+          et </p>
       </div>
-    </div>
-  </div>
-  <div className="banner-iteam banner main-overlay" style={{background: 'url("https://png.pngtree.com/png-clipart/20190903/original/pngtree-cute-cartoon-light-bulb-png-image_4426418.jpg") no-repeat center/cover'}}>
-    <div className="clouds">
-      <img src="images/Smoke_effect/cloud1.png" alt="cloud1" />
-      <img src="images/Smoke_effect/cloud2.png" alt="cloud2" />
-      <img src="images/Smoke_effect/cloud3.png" alt="cloud3" />
-      <img src="images/Smoke_effect/cloud4.png" alt="cloud4" />
-      <img src="images/Smoke_effect/cloud5.png" alt="cloud5" />
-    </div>
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 ms-auto text-end col-md-12 col-xxl-12  col-xl-12">
-          <div className="banner-text slide-content">
-            <h2>Model,Moscov</h2>
-            <h1>Anna Angelia</h1>
-            <p>"We are professional photography agency."</p>
-            <a className="a ms-auto" href="pricing.html">Buy Now</a>
-          </div>
-        </div>
+      <div className="col-md-4">
+        <div className="flaticon-coffee69" />
+        <hr />
+        <h3>WE ARE MODERN</h3>
+        <p>Lorem ipsum dolor sit amet conse ctetur <br /> adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore
+          et </p>
       </div>
-    </div>
-  </div>
-  <div className="banner-iteam banner main-overlay" style={{background: 'url("https://png.pngtree.com/png-clipart/20190903/original/pngtree-cute-cartoon-light-bulb-png-image_4426418.jpg") no-repeat center/cover'}}>
-    <div className="clouds">
-      <img src="images/Smoke_effect/cloud1.png" alt="cloud1" />
-      <img src="images/Smoke_effect/cloud2.png" alt="cloud2" />
-      <img src="images/Smoke_effect/cloud3.png" alt="cloud3" />
-      <img src="images/Smoke_effect/cloud4.png" alt="cloud4" />
-      <img src="images/Smoke_effect/cloud5.png" alt="cloud5" />
-    </div>
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 ms-auto text-end col-md-12 col-xxl-12  col-xl-12">
-          <div className="banner-text slide-content">
-            <h2>Wedding Shots</h2>
-            <h1>Nata &amp; Robert</h1>
-            <p>"We are professional photography agency."</p>
-            <a className="a ms-auto" href="pricing.html">Buy Now</a>
-          </div>
-        </div>
+      <div className="col-md-4">
+        <div className="flaticon-hotel70" />
+        <hr />
+        <h3>WE ARE EXPERTS</h3>
+        <p>Lorem ipsum dolor sit amet conse ctetur <br /> adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore
+          et </p>
       </div>
     </div>
   </div>
 </section>
+
 
     </div>
   )

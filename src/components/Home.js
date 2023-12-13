@@ -2,10 +2,12 @@
     import "../css/style.css"
     import "../css/testimonial.css"
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-    import {faMagnifyingGlass,faRing,faPhotoFilm, faCakeCandles} from "@fortawesome/free-solid-svg-icons"
+    import {faMagnifyingGlass,faRing,faPhotoFilm, faCakeCandles, faGhost, faMugHot, faKey} from "@fortawesome/free-solid-svg-icons"
     import 'bootstrap/dist/css/bootstrap.min.css';
 import Testimonial from './testimonial'
 import Footer from './footer'
+import { Link } from 'react-router-dom'
+import Header from './header'
 
 
 
@@ -74,51 +76,8 @@ import Footer from './footer'
                 </div>
             ) : (
     <div>
-    <header className="header">
-      
-    <nav class="navbar navbar-light">
-        <div className='navbar_brand'>
-        <a href="index.html"><div className="logo"></div></a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"  >
-    <div className="burger">
-            <div className="burger__patty" />
-            <div className="burger__patty" />
-            <div className="burger__patty" />
-            </div>
-    </button>
-
-    <div style={{ position: "fixed",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-               
-             
-               }}class="collapse navbar-collapse" id="navbarText">
-    <div className="menu__brand">
-            <a href="index.html"><div className="logo"></div></a>
-        </div>
-        <ul class="menu__list">
-        <li class="menu__item active">
-            <a class="menu__link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="#">About Us</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="#">Services</a>
-        </li>
-        <li class="menu__item">
-            <a class="menu__link" href="#">Contact Us</a>
-        </li>
-        </ul>
-       
-    </div>
-    </nav>
-    </header>
     {/* Navigation */}
-<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+<div style= {{top:80}}id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
   <ol className="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
     <li data-target="#carouselExampleIndicators" data-slide-to={1} />
@@ -126,7 +85,7 @@ import Footer from './footer'
   </ol>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img className="d-block w-100" src="https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg" alt="First slide" />
+      <img style={{}}className="d-block w-100" src="https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg" alt="First slide" />
     </div>
     <div className="carousel-item">
     <img className="d-block w-100" src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/07/social-media-for-photographers-follow-1.jpg" alt="First slide" />
@@ -135,11 +94,11 @@ import Footer from './footer'
     <img className="d-block w-100" src="https://images.shiksha.com/mediadata/images/articles/1568193656phpmWI2xq.jpeg" alt="First slide" />
     </div>
   </div>
-  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true" />
+  <a style={{ top:300}} className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span  className="carousel-control-prev-icon" aria-hidden="true" />
     <span className="sr-only">Previous</span>
   </a>
-  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a style={{  top:300}}className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span className="carousel-control-next-icon" aria-hidden="true" />
     <span className="sr-only">Next</span>
   </a>
@@ -148,7 +107,9 @@ import Footer from './footer'
 
 	
     </div>
+    
     )}
+ 
          <div id="about" className="section wb">
   <div className="container">
     <div className="row">
@@ -217,6 +178,36 @@ import Footer from './footer'
               </div>
             </div>
           </div>
+          <section className="well well__ins1 center">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-4">
+        <FontAwesomeIcon className="flaticon-toilets1" icon={faGhost}  size='2xl' color='black' />
+        <hr />
+        <h3>WE ARE CREATIVE</h3>
+        <p>Lorem ipsum dolor sit amet conse ctetur <br /> adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore
+          et </p>
+      </div>
+      <div className="col-md-4">
+      <FontAwesomeIcon className="flaticon-toilets1" icon={faMugHot} size='2xl' color='black' />
+        <hr />
+        <h3>WE ARE MODERN</h3>
+        <p>Lorem ipsum dolor sit amet conse ctetur <br /> adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore
+          et </p>
+      </div>
+      <div className="col-md-4">
+      <FontAwesomeIcon className="flaticon-toilets1" icon={faKey} size='2xl' color='black' />
+        <hr />
+        <h3>WE ARE EXPERTS</h3>
+        <p>Lorem ipsum dolor sit amet conse ctetur <br /> adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore
+          et </p>
+      </div>
+    </div>
+  </div>
+</section>
         <div id="services" className="section lb">
   <div className="container">
     <div className="section-title text-center">
@@ -261,6 +252,7 @@ import Footer from './footer'
         </a>
       </div>{/* end col */}
     </div>{/* end row */}
+    <Link style={{color:"black"}}to="Services" className="hover-effect-new"><span>Explore More</span></Link>
   </div>{/* end container */}
 </div>{/* end section */}
 {/* testimonial start */}
