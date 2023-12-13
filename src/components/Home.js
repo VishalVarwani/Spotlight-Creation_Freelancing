@@ -234,7 +234,7 @@ import Header from './header'
             <FontAwesomeIcon icon={faPhotoFilm} size='2xl' />
                                     </div>
             <h2>TVC</h2>
-            <p>At Spotlight Creation, our TVC services are designed to transform your brand into a captivating visual story that resonates with your audience.</p>
+            <p>At Spotlight Creation, our TVC services are designed to transform your brand into a captivating visual <br/> story that resonates with your audience.</p>
           </div>
         </div>
       </div>{/* end col */}
