@@ -14,7 +14,7 @@ import 'swiper/css/autoplay'
 import { EffectCoverflow, Pagination, Navigation ,Autoplay} from 'swiper/modules';
 
 
-import rightquote from '../assets/rightquote.png'
+import rightquote from '../assets/right-quote.png'
 function Testimonial() {
   return (
     <div style={{marginBottom:100}}className="container">

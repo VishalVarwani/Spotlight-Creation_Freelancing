@@ -258,7 +258,15 @@ import Header from './header'
 {/* testimonial start */}
 <Testimonial/>
 {/* testimonial end */}
-
+<section className="section-md bg-accent bg-image text-center bg-overlay-darker" style={{backgroundImage: 'url(https://media.istockphoto.com/id/1341437653/photo/abstract-composition-with-connecting-dots-and-lines-futuristic-network-background-for.webp?b=1&s=170667a&w=0&k=20&c=dvHp0Kmr1AnjtiVHSe_fSRCzwUThDPx_SlW_n1UUiPg=)', backgroundPosition: 'center 50%'}}>
+  <div className="container">
+    <div className="row justify-content-md-center">
+      <div className="col-md-11 col-lg-9 col-xl-8"> 
+        <h3 style={{color:"#fff", fontSize:46, lineHeight: 1.17391, fontWeight: 800}} className="heading-decorated">Haven’t Found What You Like? Feel free to get in touch</h3><a className="button button-primary" href="contacts.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
 {/* footer start */}
 <Footer/>
 {/* footer end */}

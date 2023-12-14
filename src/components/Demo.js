@@ -1,42 +1,17 @@
 import React from 'react'
-import "../css/demo.css"
-import {faMagnifyingGlass,faRing,faPhotoFilm, faCakeCandles} from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "../css/css.css"
 export default function Demo() {
   return (
     <div>
-      <section className="well well__ins1 center">
+     <section className="section-md bg-accent bg-image text-center bg-overlay-darker" style={{backgroundImage: 'url(https://c4.wallpaperflare.com/wallpaper/253/638/452/light-background-hd-wallpaper-preview.jpg)', backgroundPosition: 'center 50%'}}>
   <div className="container">
-    <div className="row">
-      <div className="col-md-4">
-        <FontAwesomeIcon className="flaticon-toilets1" icon={faCakeCandles} size='2xl' color='black' />
-
-        <hr />
-        <h3>WE ARE CREATIVE</h3>
-        <p>Lorem ipsum dolor sit amet conse ctetur <br /> adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore
-          et </p>
-      </div>
-      <div className="col-md-4">
-        <div className="flaticon-coffee69" />
-        <hr />
-        <h3>WE ARE MODERN</h3>
-        <p>Lorem ipsum dolor sit amet conse ctetur <br /> adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore
-          et </p>
-      </div>
-      <div className="col-md-4">
-        <div className="flaticon-hotel70" />
-        <hr />
-        <h3>WE ARE EXPERTS</h3>
-        <p>Lorem ipsum dolor sit amet conse ctetur <br /> adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore
-          et </p>
+    <div className="row justify-content-md-center">
+      <div className="col-md-11 col-lg-9 col-xl-8"> 
+        <h3 className="heading-decorated">Haven’t Found What You Like? Feel free to get in touch</h3><a className="button button-primary" href="contacts.html">Contact Us</a>
       </div>
     </div>
   </div>
 </section>
-
 
     </div>
   )
