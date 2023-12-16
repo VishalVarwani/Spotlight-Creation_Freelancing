@@ -5,7 +5,7 @@ export default function Header() {
     <div>
        <header className="header">
       
-      <nav class="navbar navbar-light">
+      <nav class="navbar navbar-light bg-white">
           <div className='navbar_brand'>
           <a href="index.html"><div className="logo"></div></a>
       </div>
@@ -33,10 +33,10 @@ export default function Header() {
               <Link className="menu__link" to="/">Home <span className="sr-only">(current)</span></Link>
           </li>
           <li class="menu__item">
-              <a class="menu__link" href="#">About Us</a>
+             <Link  class="menu__link" to='Services'>Services </Link>
           </li>
           <li class="menu__item">
-             <Link  class="menu__link" to='Services'>Services </Link>
+             <Link  class="menu__link" to='Gallery'>Gallery </Link>
           </li>
           <li class="menu__item">
               <a class="menu__link" href="#">Contact Us</a>

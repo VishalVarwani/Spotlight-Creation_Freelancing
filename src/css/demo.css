@@ -1,280 +1,118 @@
-
-h1 {
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 15.12px
-}
-
-@media(max-width: 479px) {
-    h1 {
-        font-size:28px;
-        line-height: 34px;
-        letter-spacing: 6px
+.carousel-item {
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    opacity: 1; /* Active slide opacity */
+    transform: scale(1.05); /* Zoom effect on active slide */
+  }
+  
+  .zoom-in {
+    animation: zoomIn 5s ease-out;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
     }
-}
-
-h2 {
-    font-size: 34px;
-    line-height: 50px
-}
-
-@media(max-width: 767px) {
-    h2 {
-        font-size:26px;
-        line-height: 30px
+    to {
+      transform: scale(1.05);
     }
-}
-
-h3 {
-    font-size: 19px;
-    line-height: 30px
-}
-
-h4 {
-    font-size: 18px
-}
-
-h5 {
-    font-size: 17px
-}
-
-h6 {
-    font-size: 16px
-}
-
-hr {
-    max-width: 106px;
-    height: 3px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: #4280c9
-}
-
-.grid_4 hr {
-    max-width: 60px
-}
-
-.center hr,hr.center {
-    margin-left: auto;
-    margin-right: auto
-}
-
-p,.copyright {
-    font-weight: 300
-}
-
-p a:hover,.copyright a:hover {
-    text-decoration: underline
-}
-
-p em,.copyright em {
-    font-size: 16px;
-    line-height: 30px;
-    color: #4280c9
-}
-
-time {
-    display: block
-}
-
-a {
-    font: inherit;
-    color: inherit;
-    text-decoration: none;
-    -moz-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    -webkit-transition: .3s all ease;
-    transition: .3s all ease
-}
-
-a:active {
-    background: 0 0
-}
-
-a:focus {
-    outline: none
-}
-
-a[href^="tel:"] {
-    color: inherit;
-    text-decoration: none
-}
-
-strong {
-    font-weight: 700
-}
-
-.fa {
-    line-height: inherit
-}
-
-[class*=fa-]:before {
-    font-family: fontawesome
-}
-
-.center {
-    text-align: center
-}
-
-.right {
-    text-align: right
-}
-
-.mg-add {
-    margin-top: 19px
-}
-
-.oh {
-    overflow: hidden
-}
-
-.page {
-    overflow: hidden;
-    min-height: 500px
-}
-
-.lt-ie9 .page {
-    min-width: 1200px
-}
-
-.primary {
-    color: #4280c9
-}
-
-
-
-*+h2 {
-    margin-top: 116px
-}
-
-*+h3 {
-    margin-top: 31px
-}
-
-*+h5 {
-    margin-top: 12px
-}
-
-*+hr {
-    margin-top: 28px
-}
-
-*+p {
-    margin-top: 18px
-}
-
-*+.booking-form {
-    margin-top: 63px
-}
-
-*+.flex-list {
-    margin-top: 26px
-}
-
-*+.row {
-    margin-top: 81px
-}
-
-
-
-
-
-
-.flaticon-toilets1,.flaticon-coffee69,.flaticon-hotel70 {
-    color: #e5e5e5;
-    line-height: 109px
-}
-
-.flaticon-toilets1 {
-    font-size: 93px
-}
-
-.flaticon-coffee69,.flaticon-hotel70 {
-    font-size: 103px
-}
-
-
-
-
-
-main {
-    display: block;
-    background: #fff
-}
-
-.well {
-    padding-top: 75px;
-    padding-bottom: 81px
-}
-
-.well__ins1 {
-    padding-bottom: 88px;
-}
-
-.well2 {
-    padding-top: 31px;
-    padding-bottom: 30px
-}
-
-.thumb-container:before,.thumb-container:after {
-    display: table;
-    content: "";
-    line-height: 0
-}
-
-.thumb-container:after {
-    clear: both
-}
-
-.thumb-container .item {
-    float: left;
-    width: 20%
-}
-
-@media(max-width: 979px) {
-    .thumb-container .item {
-        width:33.33333333%
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
-}
-
-@media(max-width: 767px) {
-    .thumb-container .item {
-        float:none;
-        width: 100%
+    to {
+      opacity: 1;
     }
-}
+  }
+  
+  .blur {
+    filter: blur(8px);
+    transition: filter 0.5s ease-in-out;
+  }
+  
+  .carousel-item.active .blur {
+    filter: blur(0);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: 0;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  left: 0;
+    z-index: 1;
 
-.well3 {
-    padding: 162px 0 167px
-}
+    color: white;
+  }
 
-.well3 *+hr {
-    margin-top: 38px
-}
-
-@media(max-width: 479px) {
-    .well3 {
-        padding:120px 0
-    }
-}
-
-.well4 {
-    padding: 98px 0 33px
-}
-
-.well5 {
-    padding-top: 15px;
-    padding-bottom: 18px
-}
-
-.bg-primary {
-    background: #4280c9
-}
-
-.bg-primary *:not(.btn) {
-    color: #fff
-}
-
-
-
+  
+  .carousel-caption h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+ 
+  
+  /* Additional Styles */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #fff;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff;
+  }
+  
+  /* Pause on hover effect */
+  #carouselExampleControls:hover .carousel-control-prev,
+  #carouselExampleControls:hover .carousel-control-next {
+    opacity: 1;
+  }
+  
+  #carouselExampleControls:hover .carousel-inner {
+    animation-play-state: paused;
+  }
+  
+  /* Add your own custom styles as needed */
+  

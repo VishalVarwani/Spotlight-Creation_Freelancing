@@ -353,17 +353,7 @@ a img.aligncenter {
   -webkit-transform: rotate(-45deg) translate(5px, -4px);
           transform: rotate(-45deg) translate(5px, -4px);
 }
-.carousel-item {
-    height: 600px; /* Set your desired height */
-    overflow: hidden;
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire container */
-    transition: transform 0.5s ease; /* Add a smooth transition effect */
-  }
+
   
   /* Add bounceInLeft and bounceInRight animations from Animate.css */
   .carousel-item.left {
@@ -1706,7 +1696,36 @@ hr.hr3 {
 hr.invis {
     border-color: transparent;
 }
+.headinggallery {
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+    text-transform: capitalize;
+    position: relative;
+  }
+  
+  .headinggallery::before {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: var(--helper);
+    border-radius: 50%;
+  }
+  
+  .headinggallery::after {
+    left: 48%;
+    content: "";
+    position: absolute;
+    top: 118%;
+    min-width: 3rem;
+  align-self: center;
+  justify-content: center;
+  display: flex;
 
+    height: 0.3rem;
+    background: var(--helper);
+  }
 hr.invis1 {
     margin: 10px 0;
     border-color: transparent;
