@@ -22,10 +22,10 @@ export default function Footer() {
             RECENT NEWS
           </h4>
           <p className="ph-links-column">
-            <a href="#" className="text-black">About us</a>
-            <a href="#" className="text-black">Services</a>
-            <a href="#" className="text-black">Our Portfolio</a>
-            <a href="#" className="text-black">Get In Touch</a>
+            <a href="#" className="text-white">About us</a>
+            <a href="#" className="text-white">Services</a>
+            <a href="#" className="text-white">Our Portfolio</a>
+            <a href="#" className="text-white">Get In Touch</a>
           </p>
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12">
@@ -33,11 +33,11 @@ export default function Footer() {
             Our Services
           </h4>
           <p className="ph-links-column">
-            <a href="#" className="text-black">Garment shoot</a>
-            <a href="#" className="text-black">Social Media</a>
-            <a href="#" className="text-black">Model Portfolio</a>
-            <a href="#" className="text-black">Product Shoot</a>
-            <a href="#" className="text-black">TVC</a>
+            <a href="#" className="text-white">Garment shoot</a>
+            <a href="#" className="text-white">Social Media</a>
+            <a href="#" className="text-white">Model Portfolio</a>
+            <a href="#" className="text-white">Product Shoot</a>
+            <a href="#" className="text-white">TVC</a>
           </p>
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12">

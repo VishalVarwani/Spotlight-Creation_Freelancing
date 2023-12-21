@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom'
 export default function Header() {
   return (
     <div>
+       <Link to="https://api.whatsapp.com/send?phone=+91 9324214404&amp;text=Hi I need to know about Interior Designing"
+        className="float" target="_blank"><i className="fab fa-whatsapp my-float"></i></Link>
+<Link className="wp-call-button" to="tel:+91 9324214404"></Link>
        <header className="header">
       
-      <nav class="navbar navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
           <div className='navbar_brand'>
           <a href="index.html"><div className="logo"></div></a>
       </div>
@@ -17,7 +20,7 @@ export default function Header() {
               </div>
       </button>
   
-      <div style={{ position: "fixed",
+      <div style={{
                   top: 0,
                   left: 0,
                   width: "100%",
@@ -33,13 +36,13 @@ export default function Header() {
               <Link className="menu__link" to="/">Home <span className="sr-only">(current)</span></Link>
           </li>
           <li class="menu__item">
-             <Link  class="menu__link" to='Services'>Services </Link>
+             <Link  className="menu__link" to='Services'>Services </Link>
           </li>
           <li class="menu__item">
-             <Link  class="menu__link" to='Gallery'>Gallery </Link>
+             <Link  className="menu__link" to='Gallery'>Gallery </Link>
           </li>
           <li class="menu__item">
-              <a class="menu__link" href="#">Contact Us</a>
+              <a className="menu__link" href="#">Contact Us</a>
           </li>
           </ul>
          

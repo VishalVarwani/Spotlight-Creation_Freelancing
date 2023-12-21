@@ -375,15 +375,9 @@ a img.aligncenter {
 }
 .menu__brand, .menu__list {
   display: flex;
-  flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
-  float: left;
+  justify-content: space-evenly;
   width: 50%;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #f9ba1f;
-
   
 }
 .menu__list {
@@ -393,12 +387,7 @@ a img.aligncenter {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-.menu__brand {
-  background: #38C5B9;
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-  -webkit-transform: translate3d(0,  0);
-          transform: translate3d(0,  0);
-}
+
 .menu__brand--active {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -415,17 +404,17 @@ a img.aligncenter {
 .menu__link {
   display: inline-block;
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   padding: 15px 0;
   font-weight: 300;
   color: red;
   text-decoration: none;
-  color: white;
+  color: black;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 
 }
 .menu__link:hover {
-	color: #292929;
+	color: red;
 }
 .menu__link:before {
   content: "";
@@ -466,11 +455,7 @@ a img.aligncenter {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.menu__brand .logo {
-    width:280px;
-	height: 39px;
 
-  }
   
   .navbar_brand .logo {
     width:250px;
@@ -495,12 +480,50 @@ a img.aligncenter {
     width: 100%;
     min-height: 0;
   }
+  .menu__link:hover {
+	color: black;
+}
   ul.menu__list--active,
   div.menu__brand--active {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
-
+  .menu__link {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 15px 0;
+    font-weight: 300;
+    color: red;
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  
+  }
+  .navbar_brand .logo {
+    width:0px;
+	height: 0px;
+    margin-top: 0px;
+  }
+   .menu__list {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f9ba1f;
+  
+    
+  }
+  .menu__brand {
+    background: #38C5B9;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transform: translate3d(0,  0);
+            transform: translate3d(0,  0);
+  }
   .menu__list {
     align-items: center;
     text-align: center;
@@ -510,6 +533,7 @@ a img.aligncenter {
   .menu__link {
     font-size: 16px;
   }
+  
 
   .menu__brand {
     height: 25vh;
@@ -541,6 +565,7 @@ a img.aligncenter {
 	background: #ffffff;
 	padding: 15px 0px;
 }
+
 
 
 
